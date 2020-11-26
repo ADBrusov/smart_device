@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Smart Device. Производство и монтаж, поставка комплектующих, блоков и модулей.">
+  <title>Smart Device</title>
+  <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-500.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__logo">
+      <a></a>
+    </div>
+    <nav class="page-header__nav nav">
+      <button class="nav__burger-button" type="button"></button>
+      <div class="nav__email">
+        <a href="mailto:info@sd.ru">info@sd.ru</a>
+      </div>
+      <div class="nav__phone">
+        <a href="tel:+74950005252">+7 (495) 000 52 52</a>
+      </div>
+      <button class="nav__callback-button" type="button">Заказать звонок</button>
+    </nav>
+  </header>
 </body>
 </html>
