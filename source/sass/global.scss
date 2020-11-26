@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  min-width: $min-width;
+  height: 100%;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  background-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
