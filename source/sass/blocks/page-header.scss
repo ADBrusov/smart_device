@@ -1,4 +1,13 @@
 .page-header {
+  position: absolute;
+
+  width: 100%;
+}
+
+.page-header__container {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -6,8 +15,6 @@
   margin-right: auto;
   margin-left: auto;
   padding: 33px 25px 0;
-
-  background-color: black;
 }
 
 .page-header__logo {
@@ -18,6 +25,8 @@
 }
 
 .page-header__logo a {
+  font-size: 0;
+
   &::before {
     content: url("../img/header-logo_desktop.svg");
 
@@ -26,7 +35,7 @@
   }
 }
 
-.nav {
+.page-header__contacts {
   display: flex;
   flex: 1 0;
   flex-wrap: wrap;
@@ -34,7 +43,24 @@
   align-items: center;
 }
 
-.nav__burger-button {
+.page-header__contacts a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__burger-button {
   display: block;
   flex: 1 0 37px;
   width: 37px;
@@ -57,28 +83,11 @@
   }
 }
 
-.nav a {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  color: #ffffff;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.nav__email {
+.page-header__email {
   margin-right: 8.066%; // 88px/1091px * 100%
 }
 
-.nav__email a {
+.page-header__email a {
   display: flex;
   align-items: center;
 
@@ -97,11 +106,11 @@
   }
 }
 
-.nav__phone {
+.page-header__phone {
   margin-right: 4.583%; // 50px/1091px * 100%
 }
 
-.nav__phone a {
+.page-header__phone a {
   display: flex;
   align-items: center;
 
@@ -120,7 +129,7 @@
   }
 }
 
-.nav__callback-button {
+.page-header__callback-button {
   display: block;
   box-sizing: border-box;
   padding: 13.5px 26.5px;
@@ -136,11 +145,12 @@
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 5px;
+  cursor: pointer;
 
   &:hover {
     color: #00b2ff;
+
     background-color: #ffffff;
-    border: 1px solid #00b2ff;
   }
 
   &:active {
@@ -150,28 +160,28 @@
 
 
 @media (max-width: $tablet-width) {
-  .page-header {
+  .page-header__container {
     padding: 20px 25px 0;
   }
 
-  .nav {
+  .page-header__contacts {
     padding: 0 1px 5px;
   }
 
-  .nav__burger-button {
+  .page-header__contacts a {
+    font-size: 0;
+  }
+
+  .page-header__burger-button {
     flex: 0 0 auto;
     margin-right: 37px;
   }
 
-  .nav a {
-    font-size: 0;
-  }
-
-  .nav__email {
+  .page-header__email {
     margin-right: 33px;
   }
 
-  .nav__email a {
+  .page-header__email a {
     &::before {
       width: 25px;
       height: 24px;
@@ -181,11 +191,11 @@
     }
   }
 
-  .nav__phone {
+  .page-header__phone {
     margin-right: 0;
   }
 
-  .nav__phone a {
+  .page-header__phone a {
     &::before {
       width: 24px;
       height: 24px;
@@ -195,17 +205,17 @@
     }
   }
 
-  .nav__callback-button {
+  .page-header__callback-button {
     display: none;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .page-header {
+  .page-header__container {
     padding: 15px 17px 0;
   }
 
-  .nav {
+  .page-header__contacts {
     padding: 0 0 15px;
   }
 
@@ -218,11 +228,11 @@
     }
   }
 
-  .nav__email {
+  .page-header__email {
     margin-right: 22px;
   }
 
-  .nav__burger-button {
+  .page-header__burger-button {
     margin-right: 27px;
   }
 }

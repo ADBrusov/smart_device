@@ -18,19 +18,116 @@
   </div>
 
   <header class="page-header">
-    <div class="page-header__logo">
-      <a></a>
+    <div class="page-header__container">
+      <div class="page-header__logo">
+        <a>Smart Device - умные технологии</a>
+      </div>
+      <div class="page-header__contacts">
+        <button class="page-header__burger-button" type="button"></button>
+        <div class="page-header__email">
+          <a href="mailto:info@sd.ru">info@sd.ru</a>
+        </div>
+        <div class="page-header__phone">
+          <a href="tel:+74950005252">+7 (495) 000 52 52</a>
+        </div>
+        <button class="page-header__callback-button" type="button">Заказать звонок</button>
+      </div>
     </div>
-    <nav class="page-header__nav nav">
-      <button class="nav__burger-button" type="button"></button>
-      <div class="nav__email">
-        <a href="mailto:info@sd.ru">info@sd.ru</a>
-      </div>
-      <div class="nav__phone">
-        <a href="tel:+74950005252">+7 (495) 000 52 52</a>
-      </div>
-      <button class="nav__callback-button" type="button">Заказать звонок</button>
-    </nav>
   </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Smart Device - умные технологии</h1>
+    <section class="promo">
+      <div class="promo__container">
+        <h2>Печатные платы</h2>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <button class="promo__callback-button" type="button">Получить бесплатную консультацию</button>
+        <div class="promo__scroll">
+          <a href="#">Скролл вниз</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__top">
+      <div class="page-footer__socials-container">
+        <div class="page-footer__logo">
+          <img src="img/footer-logo.svg" alt="Service Device - умные технологии">
+        </div>
+        <div class="page-footer__socials">
+          <a class="page-footer__social-icon" href="#" aria-label="Facebook">
+            <svg width="27" height="27">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="page-footer__social-icon" href="#" aria-label="Одноклассники">
+            <svg width="27" height="27">
+              <use xlink:href="#icon-ok"></use>
+            </svg>
+          </a>
+          <a class="page-footer__social-icon" href="#" aria-label="VK">
+            <svg width="27" height="27">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="page-footer__nav-container">
+        <nav class="page-footer__nav accordeon">
+          <h3>Разделы сайта</h3>
+          <button class="accordeon__button" type="button"></button>
+          <ul class="page-footer__nav-list accordeon__content">
+            <li class="page-footer__nav-item">
+              <a href="#">О компании</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#">Продукты</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#">Производство печатных плат</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#">Монтаж печатных плат</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#">Комплектующие</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-footer__office accordeon accordeon--active">
+          <h3>Наш офис</h3>
+          <button class="accordeon__button" type="button"></button>
+          <ul class="page-footer__office-contacts accordeon__content">
+            <li class="page-footer__office-address"><a> г. Мытищи, Олимпийский проспект, д.10</a></li>
+            <li class="page-footer__office-tel"><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+            <li class="page-footer__office-tel"><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+            <li class="page-footer__office-tel"><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__bottom">
+      <div class="page-footer__bottom-container">
+        <p class="page-footer__rights">Все права защищены</p>
+        <p class="page-footer__copyright">1999-2018 SD Service Devices</p>
+        <div class="page-footer__bottom-links">
+          <p class="page-footer__confidentiality-terms">
+            <a href="#">Условия конфиденциальности</a>
+          </p>
+          <p class="page-footer__developer-link">
+            <a href="#">Developed by wow studio</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/accordeon.js"></script>
 </body>
 </html>

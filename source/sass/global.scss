@@ -4,12 +4,24 @@ html {
 }
 
 body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
   min-width: $min-width;
   height: 100%;
 
   font-family: "Roboto Condensed", "Arial", sans-serif;
 
   background-color: #ffffff;
+}
+
+.page-main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  flex: 0 0 auto;
 }
 
 *,
