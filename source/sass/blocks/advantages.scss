@@ -1,0 +1,259 @@
+.info {
+  overflow: hidden;
+}
+
+.advantages {
+  width: 100%;
+}
+
+.advantages__container {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 112px 25px 105px;
+
+  &::before {
+    content: url("../img/big_triangle.svg");
+    position: absolute;
+    top: 437px;
+    left: -53.033%;
+
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    content: url("../img/big_triangle.svg");
+    position: absolute;
+    top: 147px;
+    left: 17.131%;
+  }
+}
+
+.advantages__container h2 {
+  clip: auto;
+
+  &::before {
+    content: url("../img/small-triangle.svg");
+    position: absolute;
+    top: -71px;
+    left: -172px;
+
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    content: url("../img/small-triangle.svg");
+    position: absolute;
+    top: 285px;
+    left: 1182px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  z-index: 2;
+
+  width: 48.718%;
+  min-height: 299px;
+  padding: 95px 41px 49px 42px;
+
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #00b2ff;
+    border: 1px solid #00b2ff;
+    border-left: 3px solid #00b2ff;
+  }
+
+  &:nth-of-type(2n+1) {
+    margin-right: 2.564%;
+  }
+
+  &:nth-of-type(n+3) {
+    margin-top: 30px;
+  }
+}
+
+.advantages__item-container {
+  position: relative;
+}
+
+.advantages__item-icon {
+  position: absolute;
+  top: -56px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 36px;
+  height: 35px;
+
+  fill: #00b2ff;
+}
+
+.advantages__item:hover .advantages__item-icon {
+  fill: #ffffff;
+}
+
+.advantages__item h3 {
+  margin: 0 0 15px;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00b2ff;
+}
+
+.advantages__item:hover h3 {
+  color: #ffffff;
+}
+
+.advantages__item p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #666666;
+}
+
+.advantages__item:hover p {
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__container {
+    padding: 54px 25px 57px;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: url("../img/big_triangle.svg");
+      position: absolute;
+      top: 90px;
+      left: 27.402%;
+    }
+  }
+
+  .advantages__container h2 {
+    clip: rect(0 0 0 0);
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .advantages__item {
+    width: 47.917%;
+    min-height: 306px;
+    padding: 66px 21px 20px 24px;
+
+    &:nth-of-type(2n+1) {
+      margin-right: 4.167%;
+    }
+
+    &:nth-of-type(n+3) {
+      min-height: 232px;
+    }
+  }
+
+  .advantages__item h3 {
+    margin: 0 0 8px;
+  }
+
+  .advantages__item-icon {
+    top: -44px;
+
+    width: 32.18px;
+    height: 35.46px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages__container {
+    flex-direction: column;
+    padding: 37px 15px 37px;
+
+    &::after {
+      content: url("../img/big_triangle.svg");
+      position: absolute;
+      top: 652px;
+      left: -37.5%;
+    }
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: 310px;
+    margin: 0 0 20px;
+    padding: 70px 12px 23px 23px;
+
+    &:nth-of-type(2n+1) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(n+3) {
+      margin-top: 0;
+    }
+  }
+
+  .advantages__item--timing {
+    padding: 70px 14px 23px 23px;
+  }
+
+  .advantages__item--timing .advantages__item-icon {
+    width: 29px;
+    height: 35px;
+    top: -46px;
+  }
+
+  .advantages__item--providers .advantages__item-icon {
+    width: 32px;
+    height: 32px;
+    top: -47px;
+  }
+
+  .advantages__item--confidentiality {
+    padding: 64px 12px 23px 23px;
+  }
+
+  .advantages__item--confidentiality .advantages__item-icon {
+    width: 30px;
+    height: 26px;
+    top: -38px;
+  }
+
+  .advantages__item--price {
+    padding: 68px 14px 26px 23px;
+  }
+
+  .advantages__item--price .advantages__item-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .advantages__item h3 {
+    margin: 0 0 10px;
+
+    font-size: 20px;
+    line-height: 140.62%;
+  }
+
+  .advantages__item--confidentiality h3 {
+    padding: 0 5px 0 0;
+    margin: 0 0 -8px;
+  }
+}
