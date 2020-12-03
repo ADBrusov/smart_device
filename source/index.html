@@ -114,6 +114,63 @@
           <a class="about-company__link" href="#">Подробнее</a>
         </div>
     </section>
+
+    <section class="catalog">
+      <div class="catalog__container">
+        <h2>Service Device предлагает следующие товары и услуги</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item--production">
+            <a href="#">
+              <div class="catalog__item-container">
+                <h3>Производство печатных плат</h3>
+              </div>
+              <div class="catalog__item-angle"></div>
+            </a>
+          </li>
+          <li class="catalog__item catalog__item--mounting">
+            <a href="#">
+              <div class="catalog__item-container">
+                <h3>Монтаж печатных плат</h3>
+              </div>
+              <div class="catalog__item-angle"></div>
+            </a>
+          </li>
+          <li class="catalog__item catalog__item--accessories">
+            <a href="#">
+              <div class="catalog__item-container">
+                <h3>Комплектующие для светотехники</h3>
+              </div>
+              <div class="catalog__item-angle"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="callback">
+      <div class="callback__container">
+        <div class="callback__form-wrap">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form class="callback__form">
+            <div class="callback__form-section callback__form-section--basic">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input type="text" name="name" id="name" placeholder="Имя" required>
+              <label class="visually-hidden" for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+            </div>
+            <div class="callback__form-section callback__form-section--answer">
+              <textarea name="answer" id="answer" placeholder="Ваш вопрос" aria-label="Поле для вопроса" required></textarea>
+            </div>
+            <div class="callback__form-section callback__form-section--submit">
+              <button class="callback__form-button" type="submit">Задать вопрос</button>
+              <input class="visually-hidden" type="checkbox" name="agreement" id="agreement" checked required>
+              <label for="agreement">Я согласен на обработку персональных данных</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
