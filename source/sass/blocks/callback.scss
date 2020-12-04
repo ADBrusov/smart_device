@@ -120,7 +120,10 @@
     color: #ffffff;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    border: none;
+    outline: none;
     opacity: 0.7;
   }
 
@@ -305,8 +308,8 @@
   }
 
   .callback__form-section {
-    width: 290px;
     flex-direction: column;
+    width: 290px;
   }
 
   .callback__form-section--basic {
@@ -333,9 +336,8 @@
   .callback__form-button {
     flex: 0 1 auto;
     width: 100%;
-    padding: 14px 18px 15px;
-
     margin: 0 0 30px;
+    padding: 14px 18px 15px;
   }
 
   .callback__form-section--submit label {

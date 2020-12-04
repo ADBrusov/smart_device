@@ -8,7 +8,6 @@
   <title>Smart Device</title>
   <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-500.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -41,7 +40,7 @@
       <div class="promo__container">
         <h2>Печатные платы</h2>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <button class="promo__callback-button" type="button">Получить бесплатную консультацию</button>
+        <a class="promo__callback-button" href="#callback">Получить бесплатную консультацию</a>
         <div class="promo__scroll">
           <a href="#info">Скролл вниз</a>
         </div>
@@ -147,7 +146,7 @@
       </div>
     </section>
 
-    <section class="callback">
+    <section class="callback" id="callback">
       <div class="callback__container">
         <div class="callback__form-wrap">
           <h2>Остались вопросы? Задайте их нам!</h2>
@@ -252,6 +251,29 @@
       </div>
     </div>
   </footer>
-  <script src="js/accordeon.js"></script>
+
+  <div class="callback popup">
+    <div class="callback__container">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="callback__form">
+        <div class="callback__form-section callback__form-section--basic">
+          <label class="visually-hidden" for="name">Имя</label>
+          <input type="text" name="name" id="name" placeholder="Имя" required>
+          <label class="visually-hidden" for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="callback__form-section callback__form-section--answer">
+          <textarea name="answer" id="answer" placeholder="Ваш вопрос" aria-label="Поле для вопроса" required></textarea>
+        </div>
+        <div class="callback__form-section popup__form-section--submit">
+          <button class="callback__form-button" type="submit">Отправить</button>
+          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement_popup" checked required>
+          <label for="agreement_popup">Я согласен на обработку персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
