@@ -12,7 +12,7 @@
   max-width: 1461px;
   margin-right: auto;
   margin-left: auto;
-  padding: 65px 25px 0;
+  padding: 65px 24px 0 25px;
 }
 
 .page-footer__socials-container {
@@ -84,7 +84,7 @@
 .page-footer__nav-list {
   display: flex;
   flex-flow: column wrap;
-  max-height: 100px;
+  height: 100px;
 }
 
 .page-footer__nav-item {

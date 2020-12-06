@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
         <a>Smart Device - умные технологии</a>
       </div>
       <div class="page-header__contacts">
-        <button class="page-header__burger-button" type="button"></button>
+        <button class="page-header__burger-button" type="button" aria-label="Кнопка меню"></button>
         <div class="page-header__email">
           <a href="mailto:info@sd.ru">info@sd.ru</a>
         </div>
@@ -156,7 +156,7 @@
               <label class="visually-hidden" for="name">Имя</label>
               <input type="text" name="name" id="name" placeholder="Имя" required>
               <label class="visually-hidden" for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+              <input type="tel" name="tel" id="tel" placeholder="Телефон" maxlength="14" pattern="\+7\([0-9]{3}\)[0-9]{7}" required>
             </div>
             <div class="callback__form-section callback__form-section--answer">
               <textarea name="answer" id="answer" placeholder="Ваш вопрос" aria-label="Поле для вопроса" required></textarea>
@@ -176,7 +176,7 @@
     <div class="page-footer__top">
       <div class="page-footer__socials-container">
         <div class="page-footer__logo">
-          <img src="img/footer-logo.svg" alt="Service Device - умные технологии">
+          <img src="img/footer-logo.svg" alt="Service Device - умные технологии" width="216" height="52">
         </div>
         <div class="page-footer__socials">
           <a class="page-footer__social-icon" href="#" aria-label="Facebook">
@@ -259,12 +259,12 @@
       <form class="callback__form">
         <div class="callback__form-section callback__form-section--basic">
           <label class="visually-hidden" for="name">Имя</label>
-          <input type="text" name="name" id="name" placeholder="Имя" required>
+          <input type="text" name="name" id="name_popup" placeholder="Имя" required>
           <label class="visually-hidden" for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+          <input type="tel" name="tel" id="tel_popup" placeholder="Телефон" maxlength="14" pattern="\+7\([0-9]{3}\)[0-9]{7}" required>
         </div>
         <div class="callback__form-section callback__form-section--answer">
-          <textarea name="answer" id="answer" placeholder="Ваш вопрос" aria-label="Поле для вопроса" required></textarea>
+          <textarea name="answer" id="answer_popup" placeholder="Ваш вопрос" aria-label="Поле для вопроса" required></textarea>
         </div>
         <div class="callback__form-section popup__form-section--submit">
           <button class="callback__form-button" type="submit">Отправить</button>

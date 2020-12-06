@@ -92,8 +92,10 @@
   position: relative;
   z-index: 2;
 
+  display: block;
+  width: 407px;
   margin: 0 0 0 98px;
-  padding: 18px 45px;
+  padding: 18px 43px;
 
   font-weight: bold;
   font-size: 16px;
@@ -197,8 +199,9 @@
   }
 
   .promo__callback-button {
+    width: 379px;
     margin: 0 0 0 119px;
-    padding: 18px 31px;
+    padding: 18px 29px;
   }
 
   .promo__scroll {
@@ -258,8 +261,9 @@
 
   .promo__callback-button {
     width: 287px;
+    height: 55px;
     margin: 0 0 0 3px;
-    padding: 18px 31px;
+    padding: 18px 29px;
 
     font-size: 0;
 

@@ -18,7 +18,7 @@
 }
 
 .page-header__logo {
-  flex: 0 0;
+  flex: 0 0 202px;
   width: 202px;
   height: 52px;
   margin-right: 8.363%; // 118px/1411px * 100% = 8.363%
@@ -65,7 +65,7 @@
   flex: 1 0 37px;
   width: 37px;
   height: 13px;
-  margin-right: 20px;
+  margin-right: 10px;
 
   background-color: transparent;
   background-image: url("../img/icon-two_bars.svg");
@@ -217,6 +217,10 @@
 
   .page-header__contacts {
     padding: 0 0 15px;
+  }
+
+  .page-header__logo {
+    flex: 0 0 38px;
   }
 
   .page-header__logo a {

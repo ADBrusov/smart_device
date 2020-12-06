@@ -38,6 +38,7 @@
     position: absolute;
     top: 70px;
     left: -625px;
+    z-index: 2;
 
     display: block;
     width: 511px;
@@ -201,7 +202,7 @@
 
 .callback__form-section--submit input[type="checkbox"]:checked + label {
   &::before {
-    background-image: url("../../img/icon-check.svg");
+    background-image: url("../img/icon-check.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
