@@ -4,29 +4,31 @@
   var popup = document.querySelector('.popup');
   var callbackButton = document.querySelector('.page-header__callback-button');
   var nameInputPopup = popup.querySelector('#name_popup');
+  var closeButton = popup.querySelector('.callback__close-button');
 
-  if (callbackButton && nameInputPopup) {
+  if (callbackButton && nameInputPopup && closeButton) {
     callbackButton.addEventListener('click', function () {
       var openPopup = function () {
         popup.classList.add('popup--active');
         nameInputPopup.focus();
-        popup.addEventListener('click', popupCloseOnClick);
-        document.addEventListener('keydown', popupCloseOnKey);
+        popup.addEventListener('click', closePopupOnClick);
+        document.addEventListener('keydown', closePopupOnKey);
+        closeButton.addEventListener('click', closePopup);
       };
 
       var closePopup = function () {
         popup.classList.remove('popup--active');
-        popup.removeEventListener('click', popupCloseOnClick);
-        document.addEventListener('keydown', popupCloseOnKey);
+        popup.removeEventListener('click', closePopupOnClick);
+        document.addEventListener('keydown', closePopupOnKey);
       };
 
-      var popupCloseOnClick = function (evt) {
+      var closePopupOnClick = function (evt) {
         if (evt.target === evt.currentTarget) {
           closePopup();
         }
       };
 
-      var popupCloseOnKey = function (evt) {
+      var closePopupOnKey = function (evt) {
         if (evt.key === 'Escape' || evt.key === 'x') {
           closePopup();
         }
@@ -66,6 +68,14 @@
   }
 
   // Аккордеон для меню в футере
+  var accordeons = document.querySelectorAll('.accordeon');
+
+  if (accordeons) {
+    accordeons.forEach(function (accordeon) {
+      accordeon.classList.remove('accordeon--nojs');
+    });
+  }
+
   var accordeonButtons = document.querySelectorAll('.accordeon__button');
 
   if (accordeonButtons) {
@@ -85,4 +95,3 @@
     });
   }
 })();
-

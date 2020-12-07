@@ -312,11 +312,19 @@
     background-image: url("../img/icon-minus.svg");
   }
 
+  .accordeon--nojs .accordeon__button {
+    background-image: none;
+  }
+
   .accordeon .accordeon__content {
     display: none;
   }
 
   .accordeon--active .accordeon__content {
+    display: flex;
+  }
+
+  .accordeon--nojs .accordeon__content {
     display: flex;
   }
 

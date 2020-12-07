@@ -154,6 +154,7 @@
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 5px;
+  cursor: pointer;
 
   &:hover {
     color: #00b2ff;
@@ -174,6 +175,7 @@
   font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
 
+  cursor: pointer;
   opacity: 0.8;
 
   &::before {
