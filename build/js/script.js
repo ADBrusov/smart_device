@@ -19,7 +19,8 @@
       var closePopup = function () {
         popup.classList.remove('popup--active');
         popup.removeEventListener('click', closePopupOnClick);
-        document.addEventListener('keydown', closePopupOnKey);
+        document.removeEventListener('keydown', closePopupOnKey);
+        closeButton.removeEventListener('click', closePopup);
       };
 
       var closePopupOnClick = function (evt) {
@@ -95,4 +96,3 @@
     });
   }
 })();
-
