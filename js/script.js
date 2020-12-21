@@ -5,6 +5,7 @@
   var callbackButton = document.querySelector('.page-header__callback-button');
   var nameInputPopup = popup.querySelector('#name_popup');
   var closeButton = popup.querySelector('.callback__close-button');
+  var body = document.querySelector('body');
 
   if (callbackButton && nameInputPopup && closeButton) {
     callbackButton.addEventListener('click', function () {
@@ -14,6 +15,7 @@
         popup.addEventListener('click', closePopupOnClick);
         document.addEventListener('keydown', closePopupOnKey);
         closeButton.addEventListener('click', closePopup);
+        body.style.overflowY = 'hidden';
       };
 
       var closePopup = function () {
@@ -21,6 +23,7 @@
         popup.removeEventListener('click', closePopupOnClick);
         document.removeEventListener('keydown', closePopupOnKey);
         closeButton.removeEventListener('click', closePopup);
+        body.style.overflowY = 'auto';
       };
 
       var closePopupOnClick = function (evt) {
@@ -74,23 +77,14 @@
   if (accordeons) {
     accordeons.forEach(function (accordeon) {
       accordeon.classList.remove('accordeon--nojs');
-    });
-  }
-
-  var accordeonButtons = document.querySelectorAll('.accordeon__button');
-
-  if (accordeonButtons) {
-    accordeonButtons.forEach(function (accordeonButton) {
-      accordeonButton.addEventListener('click', function () {
-        var parent = accordeonButton.parentNode;
-
-        if (parent.classList.contains('accordeon--active')) {
-          parent.classList.remove('accordeon--active');
+      accordeon.addEventListener('click', function () {
+        if (accordeon.classList.contains('accordeon--active')) {
+          accordeon.classList.remove('accordeon--active');
         } else {
-          document.querySelectorAll('.accordeon').forEach(function (child) {
+          accordeons.forEach(function (child) {
             child.classList.remove('accordeon--active');
           });
-          parent.classList.add('accordeon--active');
+          accordeon.classList.add('accordeon--active');
         }
       });
     });
