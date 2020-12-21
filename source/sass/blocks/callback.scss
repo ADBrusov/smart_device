@@ -116,6 +116,7 @@
 
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
+  border-radius: 0;
 
   &::placeholder {
     color: #ffffff;
@@ -131,6 +132,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.callback__form textarea {
+  resize: none;
 }
 
 .callback__form-section--submit {
