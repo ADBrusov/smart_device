@@ -307,23 +307,23 @@
     <div class="callback__container">
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <button class="callback__close-button" type="button"></button>
       <form class="callback__form">
         <div class="callback__form-section callback__form-section--basic">
           <label class="visually-hidden" for="name">Имя</label>
-          <input type="text" name="name" id="name_popup" placeholder="Имя" required="">
+          <input type="text" name="name" id="name_popup" placeholder="Имя" required="" tabindex="1">
           <label class="visually-hidden" for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel_popup" placeholder="Телефон" maxlength="14" pattern="\+7\([0-9]{3}\)[0-9]{7}" required="">
+          <input type="tel" name="tel" id="tel_popup" placeholder="Телефон" maxlength="14" pattern="\+7\([0-9]{3}\)[0-9]{7}" required="" tabindex="2">
         </div>
         <div class="callback__form-section callback__form-section--answer">
-          <textarea name="answer" id="answer_popup" placeholder="Ваш вопрос" aria-label="Поле для вопроса" required=""></textarea>
+          <textarea name="answer" id="answer_popup" placeholder="Ваш вопрос" aria-label="Поле для вопроса" required="" tabindex="3"></textarea>
         </div>
         <div class="callback__form-section popup__form-section popup__form-section--submit">
-          <button class="callback__form-button" type="submit">Отправить</button>
-          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement_popup" checked="" required="">
+          <button class="callback__form-button" type="submit" tabindex="5">Отправить</button>
+          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement_popup" checked="" required="" tabindex="4">
           <label for="agreement_popup">Я согласен на обработку персональных данных</label>
         </div>
       </form>
+      <button class="callback__close-button" type="button" tabindex="6"></button>
     </div>
   </div>
   <script src="js/script.js"></script>
