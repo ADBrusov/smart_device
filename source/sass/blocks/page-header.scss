@@ -128,6 +128,12 @@
   }
 }
 
+.page-header__contacts div {
+  &:nth-child(n + 4) {
+    margin-top: 15px;
+  }
+}
+
 .page-header__callback-button {
   display: block;
   box-sizing: border-box;
